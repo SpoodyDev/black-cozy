@@ -1,0 +1,87 @@
+/**
+* @name Sussy Theme
+* @author Spoody#9999
+* @description A simple customisable Discord theme
+* @invite rtBQX5D3bD
+* @version 2.0
+*/
+
+/* No scrollbars --> Delete all until "Mention color" if you don't want it */
+::-webkit-scrollbar { display: none !important;}.note-3HfJZ5 { margin-right: 0; }.content-1x5b-n { margin: 0 !important; border-radius: 0; }.mainContent-u_9PKf { padding-left: 8px;}.member-3-YXUe, [id*="private-channels-"] { margin: 0; max-width: unset; }.layout-2DM8Md { border-radius: 0; padding: 0 16px;}.unread-2lAfLh { z-index: 1;}.content-1LAB8Z, .item-1tOPte { margin-right: 8px;}.scroller-2hZ97C { padding-left: 0;}.scroller-2hZ97C > .content-3YMskv, .buttons-3JBrkn, .messagesPopout-24nkyi { padding-right: 10px !important; }.inviteRow-2L02ae {border-radius: 0; padding-left: 15px;}.sidebar-CFHs9e { padding-right : 0; margin: 0 40px 0 20px;}
+
+/* Comfy Spotify version -> Delete until Spotify if you don't want it */
+.container-6sXIoE{position: fixed;transition: left 0.5s;bottom: 62px;left: -196px;z-index: 3;width: 265px;background: var(--background-secondary-alt);border-radius: 0 5px 5px 0;border-bottom: none !important;}.barText-lmqc5O { display: none !important;}.container-6sXIoE > .inner-WRV6k5 { flex-direction: row-reverse;}.inner-WRV6k5 > .flex-1xMQg5 > .button-14-BFJ { margin: 0;}.container-6sXIoE:hover { left: 0px;}
+
+/* Better Spotify seek bar */
+.bar-g2ZMIm {position: absolute !important;left: -2px !important;bottom: -4px !important;width: 267px !important;height: 58px !important;-webkit-mask-image: linear-gradient(0.25turn, #0009, #0003);mask-image: linear-gradient(0.25turn, #0009, #0003);}.maximized-vv2Wr0 > .timeline-UWmgAx > .bar-g2ZMIm { height: 84px !important; }.barFill-Dhkah7, .timeline-UWmgAx:hover .barFill-Dhkah7 { background: var(--spotify-color) !important;}.inner-WRV6k5 { z-index: 1 !important;}.grabber-7sd5f5 { display: none !important;}.button-14-BFJ:hover { background: none !important;}.container-6sXIoE:not(.maximized-vv2Wr0) > .inner-WRV6k5 > .coverWrapper-YAplwJ { margin-right: 1px !important; margin-left:25px !important;width: 40px !important;height: 40px !important;}
+
+:root {
+
+/* Avatar roundess */
+--avatar-radius: 100%;
+
+/* Avatar wdith in modals */
+--avatar-width: 130px;
+
+/* Server roundess */
+--server-radius: 15px 15px;
+
+/* Colored emoji picker */
+--colored-emoji: grayscale(0%); /* Change the value to "100%" if you want the basic one */
+
+/* -- Others settings -- */
+
+/* Mention color */
+--mention-color-bar: rgb(20, 20, 20);
+--mention-color-background: #ffffff1f;
+--mention-color-hover: #94949426;
+
+/* Spotify seek bar color */
+--spotify-color: #686868 !important;
+
+/* User settings color (Mute, Deafen and settings) */
+--user-buttons-color: #ffffff;
+
+/* Chat buttons color */
+--chat-buttons: rgb(68, 68, 68);
+
+/* Circles next to role names */
+--role-circle: 7px; /* Set it to "0px" if you don't want circles */
+
+/* Tooltips */
+--tooltips: block; /* Set it to "none" if you don't want it */
+
+/* Discord logo */
+--discord-logo: none; /* Set it to "block" if you want it */
+
+}
+ 
+.theme-dark {
+    --background-tertiary: #161616;
+    --background-secondary: #0c0c0c;
+    --background-secondary-alt: #0f0f0f;
+    --background-primary: #131313;
+    --channeltextarea-background: #141414;
+    --background-accent: rgb(139, 139, 139);
+    --background-modifier-hover: #1b1b1b;
+    --background-modifier-active: #181818;
+    --background-modifier-selected: #161616;
+    --deprecated-card-bg: #13131363;
+    --background-floating: #0a0a0a;
+    --deprecated-quickswitcher-input-background:#201010;
+    --spotify-color: #adadad;
+    --elevation-low: none;
+    --scrollbar-auto-thumb: #000000;
+    --scrollbar-auto-track: #353535;
+    --scrollbar-thin-thumb: #000000;
+}
+ 
+.theme-light { /* I don't support light theme it's just for the "Create a server" popup */
+    --background-tertiary: #222222;
+    --background-secondary: #2e2e2e;
+    --background-secondary-alt: #252525;
+    --background-primary: #353535;
+    --header-primary: #fff;
+    --header-secondary: #b1b5b9;
+    --text-normal: #8e9297;
+}
